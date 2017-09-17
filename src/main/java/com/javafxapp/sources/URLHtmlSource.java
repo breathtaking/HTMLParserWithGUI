@@ -2,7 +2,6 @@ package com.javafxapp.sources;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
@@ -26,7 +25,9 @@ public class URLHtmlSource implements SourceType {
                 InetAddress.getByName(host);
                 isUrlExists = true;
             } catch (MalformedURLException ex) {
+                isUrlExists = false;
             } catch (UnknownHostException ex) {
+                isUrlExists = false;
             }
         }
         return isUrlExists;
@@ -40,5 +41,4 @@ public class URLHtmlSource implements SourceType {
         }
         return document;
     }
-
 }

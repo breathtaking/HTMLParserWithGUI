@@ -2,7 +2,6 @@ package com.javafxapp.parsers;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
-
 import java.util.ArrayList;
 import java.util.List;
 

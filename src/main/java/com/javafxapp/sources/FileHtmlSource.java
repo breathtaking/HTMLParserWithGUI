@@ -2,7 +2,6 @@ package com.javafxapp.sources;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-
 import java.io.File;
 import java.io.IOException;
 
