@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="700.0" style="-fx-border-color: #CCCCCC; -fx-border-width: 5; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafxapp.controller.MainController">
+    <children>
+        <SplitPane dividerPositions="0.35755813953488375" prefHeight="300.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="242.0" style="-fx-background-color: #333333; -fx-border-width: 5; -fx-border-color: #FFFFFF;">
+                    <children>
+                        <Button id="urlButton" fx:id="urlButton" layoutX="176.0" layoutY="63.0" mnemonicParsing="false" text="Parse">
+                            <textFill>
+                                <RadialGradient centerX="0.5168539325842696" centerY="0.5432692307692307" cycleMethod="REFLECT" focusAngle="123.69" focusDistance="-0.19047619047619047" radius="0.9999999999999999">
+                                    <stops>
+                                        <Stop color="BLACK" />
+                                        <Stop color="BLACK" offset="0.00749063670411985" />
+                                        <Stop color="#97ff6a59" offset="1.0" />
+                                    </stops>
+                                </RadialGradient>
+                            </textFill>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" color="#e4dddd" height="13.0" radius="7.75" spread="0.14" width="20.0" />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                        <TextField id="urlField" fx:id="urlField" layoutX="8.0" layoutY="63.0" />
+                        <TextField fx:id="filePathField" layoutX="8.0" layoutY="136.0" />
+                        <TextField fx:id="stringField" layoutX="8.0" layoutY="219.0" />
+                        <Label layoutX="10.0" layoutY="43.0" text="Paste an URL to the Web page" textFill="#dad0d0">
+                            <font>
+                                <Font name="Kannada MN" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="116.0" text="Paste a path to the File *HTML" textFill="#dad0d0">
+                            <font>
+                                <Font name="Kannada MN" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="199.0" text="Paste a String with HTML Code" textFill="#dad0d0">
+                            <font>
+                                <Font name="Kannada MN" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button id="urlbutton" fx:id="filePathButton" layoutX="176.0" layoutY="136.0" mnemonicParsing="false" text="Parse">
+                            <textFill>
+                                <RadialGradient centerX="0.5168539325842696" centerY="0.5432692307692307" cycleMethod="REFLECT" focusAngle="123.69" focusDistance="-0.19047619047619047" radius="0.9999999999999999">
+                                    <stops>
+                                        <Stop color="BLACK" />
+                                        <Stop color="BLACK" offset="0.00749063670411985" />
+                                        <Stop color="#97ff6a59" offset="1.0" />
+                                    </stops>
+                                </RadialGradient>
+                            </textFill>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" color="#e4dddd" height="13.0" radius="7.75" spread="0.14" width="20.0" />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                        <Button id="urlbutton" fx:id="stringButton" layoutX="176.0" layoutY="219.0" mnemonicParsing="false" text="Parse">
+                            <textFill>
+                                <RadialGradient centerX="0.5168539325842696" centerY="0.5432692307692307" cycleMethod="REFLECT" focusAngle="123.69" focusDistance="-0.19047619047619047" radius="0.9999999999999999">
+                                    <stops>
+                                        <Stop color="BLACK" />
+                                        <Stop color="BLACK" offset="0.00749063670411985" />
+                                        <Stop color="#97ff6a59" offset="1.0" />
+                                    </stops>
+                                </RadialGradient>
+                            </textFill>
+                            <effect>
+                                <DropShadow blurType="GAUSSIAN" color="#e4dddd" height="13.0" radius="7.75" spread="0.14" width="20.0" />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #333333;">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <children>
+                        <TextArea id="textArea" fx:id="textArea" prefHeight="298.0" prefWidth="350.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
